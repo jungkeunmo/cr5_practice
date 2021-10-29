@@ -1,0 +1,9 @@
+extends ../layout/base.pug
+
+block content 
+    form(action="/", method="post")
+        button 홈으로가기
+    form(action="/createpost", method="post")      
+        input(type="text" name="name")
+        input(type="text" name="size")
+        input(type="submit" value="작성")
