@@ -24,7 +24,7 @@ router.get("/img", (req, res, next) => {
     res.render("screens/img");
 });
 
-router.post("createpost", (req, res, next) => {
+router.post("/createpost", (req, res, next) => {
     const insertQuery = `
         INSERT  INTO img (
             name, 
